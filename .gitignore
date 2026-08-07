@@ -1,0 +1,10 @@
+# ModelSim / Questa 生成物（不要提交）
+work/
+transcript
+*.wlf
+*.mpf
+modelsim.ini
+
+# 系统/编辑器
+Thumbs.db
+.vscode/
