@@ -1,6 +1,6 @@
 # uvm-learning-plan
 
-数字IC验证 84 天学习计划（2026-08-07 起）。
+数字IC验证 84 天学习计划。
 
 ## 目录结构
 
@@ -15,7 +15,3 @@
 
 - 主力：ModelSim SE-64 10.4（本地）
 - 备用：EDA Playground
-
-## 进度
-
-- [x] day 1：环境搭建（ModelSim hello world + 本仓库首次 push）
