@@ -1,0 +1,82 @@
+Reading D:/ModelSim/tcl/vsim/pref.tcl
+
+# 10.4
+
+# vsim -c -novopt work.tb_uart_tx_mon -do "run -all; quit -f" 
+# Start time: 19:40:12 on Aug 14,2026
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_uart_tx_mon
+# Loading work.uart_tx
+# Loading work.uart_baud
+# run -all
+# t=0 txd=1 state=0 cnt=0 baud=0
+# t=8770000 txd=1 state=0 cnt=0 baud=1
+# t=8790000 txd=0 state=1 cnt=0 baud=0
+# t=17450000 txd=0 state=1 cnt=0 baud=1
+# t=17470000 txd=1 state=2 cnt=0 baud=0
+# t=26130000 txd=1 state=2 cnt=0 baud=1
+# t=26150000 txd=0 state=2 cnt=1 baud=0
+# t=34810000 txd=0 state=2 cnt=1 baud=1
+# t=34830000 txd=1 state=2 cnt=2 baud=0
+# t=43490000 txd=1 state=2 cnt=2 baud=1
+# t=43510000 txd=0 state=2 cnt=3 baud=0
+# t=52170000 txd=0 state=2 cnt=3 baud=1
+# t=52190000 txd=1 state=2 cnt=4 baud=0
+# t=60850000 txd=1 state=2 cnt=4 baud=1
+# t=60870000 txd=0 state=2 cnt=5 baud=0
+# t=69530000 txd=0 state=2 cnt=5 baud=1
+# t=69550000 txd=1 state=2 cnt=6 baud=0
+# t=78210000 txd=1 state=2 cnt=6 baud=1
+# t=78230000 txd=0 state=2 cnt=7 baud=0
+# t=86890000 txd=0 state=2 cnt=7 baud=1
+# t=86910000 txd=1 state=3 cnt=0 baud=0
+# t=95570000 txd=1 state=3 cnt=0 baud=1
+# t=95590000 txd=1 state=0 cnt=0 baud=0
+# t=104250000 txd=1 state=0 cnt=0 baud=1
+# t=104270000 txd=1 state=0 cnt=0 baud=0
+# t=112930000 txd=1 state=0 cnt=0 baud=1
+# t=112950000 txd=1 state=0 cnt=0 baud=0
+# t=121610000 txd=1 state=0 cnt=0 baud=1
+# t=121630000 txd=1 state=0 cnt=0 baud=0
+# t=130290000 txd=1 state=0 cnt=0 baud=1
+# t=130310000 txd=1 state=0 cnt=0 baud=0
+# t=138970000 txd=1 state=0 cnt=0 baud=1
+# t=138990000 txd=1 state=0 cnt=0 baud=0
+# t=147650000 txd=1 state=0 cnt=0 baud=1
+# t=147670000 txd=1 state=0 cnt=0 baud=0
+# t=156330000 txd=1 state=0 cnt=0 baud=1
+# t=156350000 txd=1 state=0 cnt=0 baud=0
+# t=165010000 txd=1 state=0 cnt=0 baud=1
+# t=165030000 txd=1 state=0 cnt=0 baud=0
+# t=173690000 txd=1 state=0 cnt=0 baud=1
+# t=173710000 txd=1 state=0 cnt=0 baud=0
+# t=182370000 txd=1 state=0 cnt=0 baud=1
+# t=182390000 txd=1 state=0 cnt=0 baud=0
+# t=191050000 txd=1 state=0 cnt=0 baud=1
+# t=191070000 txd=1 state=0 cnt=0 baud=0
+# t=199730000 txd=1 state=0 cnt=0 baud=1
+# t=199750000 txd=1 state=0 cnt=0 baud=0
+# t=208410000 txd=1 state=0 cnt=0 baud=1
+# t=208430000 txd=1 state=0 cnt=0 baud=0
+# t=217090000 txd=1 state=0 cnt=0 baud=1
+# t=217110000 txd=1 state=0 cnt=0 baud=0
+# ** Note: $finish    : sim/tb_uart_tx_mon.v(27)
+#    Time: 217460 ns  Iteration: 0  Instance: /tb_uart_tx_mon
+# End time: 19:40:13 on Aug 14,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
