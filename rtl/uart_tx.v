@@ -2,11 +2,12 @@
 // 思路：单时序块 + baud_pulse 使能；shift 打包 tx_data；cnt 计数；
 //       DATA 状态 txd = shift[cnt]（计数器索引方案，LSB 在前）
 module uart_tx(
-    input clk,//时钟
-    input rst_n,//复位
-    input tx_flag,//开始信号
-    input [7:0]tx_data,//要发送的数据
-    output reg txd//1位输出
+    input clk,          //时钟
+    input rst_n,        //复位
+    input tx_flag,      //开始信号
+    input [7:0]tx_data, //要发送的数据
+    output tx_busy,     //忙碌状态
+    output reg txd      //1位输出
 );
 
 localparam IDEL = 2'd0, START = 2'd1, DATA = 2'd2, STOP = 2'd3;//状态常量
@@ -21,6 +22,8 @@ uart_baud utx_uart_baud(//接另外一个模型
     .rst_n(rst_n),
     .baud_pulse(baud_pulse)
 );
+
+assign tx_busy = (state != IDEL);//该发送模块不在空闲状态时忙碌
 
 // ============ 时序块：脉冲来时执行一次 ============
 always@(posedge clk or negedge rst_n)begin
@@ -57,10 +60,10 @@ end
 // ============ 输出块：组合逻辑，txd = shift[cnt] ============
 always@(*)begin
     case(state)
-    IDEL:  txd = 1'b1;             // 空闲高
-    START: txd = 1'b0;             // 起始低
-    DATA:  txd = shift[cnt];       // ← 计数器索引方案
-    STOP:  txd = 1'b1;             // 停止高
+    IDEL:  txd = 1'b1;            // 空闲高
+    START: txd = 1'b0;            // 起始低
+    DATA:  txd = shift[cnt];      // ← 计数器索引方案
+    STOP:  txd = 1'b1;           // 停止高
     default: txd = 1'b1;
     endcase
 end

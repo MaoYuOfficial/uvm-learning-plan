@@ -8,3 +8,5 @@ modelsim.ini
 # 系统/编辑器
 Thumbs.db
 .vscode/
+*.vstf
+wlft*
