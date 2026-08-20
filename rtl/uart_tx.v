@@ -17,7 +17,7 @@ reg [7:0]shift;//打包缓冲
 reg [1:0]state;//状态
 reg [3:0]cnt;//计数器
 
-uart_baud utx_uart_baud(//接另外一个模型
+uart_baud utx_uart_baud(//接波特率发生器
     .clk(clk),
     .rst_n(rst_n),
     .baud_pulse(baud_pulse)

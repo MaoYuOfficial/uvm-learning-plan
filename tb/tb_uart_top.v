@@ -20,6 +20,7 @@ uart_top utop_uart_top(//例化接线uart_top
 always #10 clk = ~clk;//时钟信号
 
 task send_byte(input [7:0] d);//发一帧：把 d 的 8 位按 LSB 在前依次摆到 rxd 上，每 bit 8680ns
+    begin
     rxd = 0; #8680;
     rxd = d[0]; #8680;
     rxd = d[1]; #8680;
@@ -30,6 +31,7 @@ task send_byte(input [7:0] d);//发一帧：把 d 的 8 位按 LSB 在前依次�
     rxd = d[6]; #8680;
     rxd = d[7]; #8680;
     rxd = 1; #8680;
+    end
 endtask
 
 initial begin//主激励：发 3 帧、每帧收完自动比对、最后出总结
