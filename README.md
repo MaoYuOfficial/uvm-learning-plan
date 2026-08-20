@@ -18,7 +18,7 @@
 
 ## FSM状态机
 
-- 包含的主要代码：**rtl/**文件夹下，fsm_skeleton.v（三段式状态机骨架模版）/fsm1.v（我自己写的fsm状态机）;**tb/**文件夹下，tb_fsm1.v（我写的状态机测试台）。
+- 包含的主要代码：**rtl/** 文件夹下，fsm_skeleton.v（三段式状态机骨架模版）/fsm1.v（我自己写的fsm状态机）;**tb/** 文件夹下，tb_fsm1.v（我写的状态机测试台）。
 
 - 时钟：周期10ns（每#5翻转一次，上升沿在t=5,15,25...）
 - 状态：Sa = 0 / Sb = 1
@@ -42,7 +42,7 @@ Errors: 0, Warnings: 0, $finish @ 70ns。
 
 ## UART TX/RX
 
-- 包含的主要代码：**rtl/**文件夹下，rst_sync.v（复位同步器，用于同步复位信号的释放和异步复位）/ uart_baud.v（波特率发生器）/ uart_rx.v（数据接收器）/uart_loop.v（环回模块）/uart_tx.v（数据发送器）/uart_top.v（顶层模块，例化并连接各子模块）。**tb/**文件夹下，tb_uart_top.v（整个UART的测试台）
+- 包含的主要代码：**rtl/** 文件夹下，rst_sync.v（复位同步器，用于同步复位信号的释放和异步复位）/ uart_baud.v（波特率发生器）/ uart_rx.v（数据接收器）/uart_loop.v（环回模块）/uart_tx.v（数据发送器）/uart_top.v（顶层模块，例化并连接各子模块）。**tb/** 文件夹下，tb_uart_top.v（整个UART的测试台）
 
 - 时钟：周期20ns，频率50MHz（每#10翻转一次）
 - 波特率：115200
