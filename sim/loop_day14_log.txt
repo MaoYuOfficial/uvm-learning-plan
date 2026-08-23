@@ -1,0 +1,46 @@
+Reading D:/ModelSim/tcl/vsim/pref.tcl
+
+# 10.4
+
+# vsim -c -novopt work.tb_uart_top -do "run -all; quit -f" 
+# Start time: 21:30:37 on Aug 22,2026
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing D:/uvm-learning-plan/work.tb_uart_top
+# Loading sv_std.std
+# Loading work.tb_uart_top
+# Refreshing D:/uvm-learning-plan/work.uart_top
+# Loading work.uart_top
+# Refreshing D:/uvm-learning-plan/work.rst_sync
+# Loading work.rst_sync
+# Refreshing D:/uvm-learning-plan/work.uart_rx
+# Loading work.uart_rx
+# Refreshing D:/uvm-learning-plan/work.uart_tx
+# Loading work.uart_tx
+# Refreshing D:/uvm-learning-plan/work.uart_baud
+# Loading work.uart_baud
+# Refreshing D:/uvm-learning-plan/work.uart_loop
+# Loading work.uart_loop
+# run -all
+# PASS: exp 0x55 == got 0x55
+# PASS: exp 0xaa == got 0xaa
+# PASS: exp 0x3c == got 0x3c
+# --- ???????????¡À 3 ??¡ì???PASS 3, FAIL 0 ---
+# ** Note: $finish    : tb/tb_uart_top.v(86)
+#    Time: 546990 ns  Iteration: 2  Instance: /tb_uart_top
+# End time: 21:30:41 on Aug 22,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
