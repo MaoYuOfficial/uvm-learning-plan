@@ -1,11 +1,11 @@
 `timescale 1ns/1ps//设定时钟周期
 
 module tb_uart_tx;//testbench端口
-    reg clk = 0;
-    reg rst_n = 0;
-    reg tx_flag = 0;
-    reg [7:0]tx_data;
-    wire txd;
+    logic clk = 0;
+    logic rst_n = 0;
+    logic tx_flag = 0;
+    logic [7:0]tx_data;
+    logic txd;
 
 uart_tx utx_uart_tx(//例化链接uart_tx
     .clk(clk),

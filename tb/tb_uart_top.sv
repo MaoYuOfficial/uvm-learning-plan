@@ -1,12 +1,12 @@
 `timescale 1ns/1ps//设定时钟周期
 
 module tb_uart_top;//testbench端口
-    reg clk = 0;
-    reg rst_n = 0;
-    reg rxd = 1;
-    wire txd;
+    logic clk = 0;
+    logic rst_n = 0;
+    logic rxd = 1;
+    logic txd;
 
-    reg [7:0] expected_byte; //期望数据
+    logic [7:0] expected_byte; //期望数据
     integer pass_cnt = 0;   //通过计数
     integer err_cnt = 0;    //未通过计数
 

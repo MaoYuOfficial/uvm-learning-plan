@@ -1,11 +1,11 @@
 `timescale 1ns/1ps//设定时钟周期
 
 module tb_uart_rx;//testbench端口
-    reg clk = 0;
-    reg rst_n = 0;
-    wire [7:0]data;
-    wire done;
-    reg rxd = 1;
+    logic clk = 0;
+    logic rst_n = 0;
+    logic [7:0]data;
+    logic done;
+    logic rxd = 1;
 
 uart_rx urx_uart_rx(//例化uart_rx
     .clk(clk),

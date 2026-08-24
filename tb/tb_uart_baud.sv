@@ -1,9 +1,9 @@
 `timescale 1ns/1ps
 
 module tb_uart_baud;
-    reg clk = 0;
-    reg rst_n = 0;
-    wire baud_pulse;
+    logic clk = 0;
+    logic rst_n = 0;
+    logic baud_pulse;
 
 
 uart_baud u_uart_baud(
