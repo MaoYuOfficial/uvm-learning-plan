@@ -9,7 +9,8 @@
 | rtl/ | RTL 设计（UART TX/RX） |
 | tb/ | 测试平台（SV TB → UVM 环境） |
 | sim/ | 仿真脚本 + 简单仿真文件 |
-| docs/ | 笔记、波形截图、博客素材 |
+| docs/ | 学习总结、笔记、波形截图、博客素材 |
+| sv-practice/ | SystemVerilog 语法、class、transaction 与验证练习代码 |
 
 ## 仿真工具
 
